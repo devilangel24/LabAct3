@@ -1,0 +1,30 @@
+fun main()
+	{
+    var age =21// val is unchangeable var can 
+    val days = 365
+    val name = "Mike"
+    val border="><><"
+    var timesTorepeat = 6
+    printBorder(border,timesTorepeat)
+    print("Happy Birthday! ${name} \n")
+    printBorder(border, timesTorepeat)
+    print("I am ${age*days} days old\n")
+    print("${age*days} days old is the best age to learn Kotlin.\n")
+    println("   ,,,,,   ")//print flame
+    println("   |||||   ")//print candle
+    println(" =========")//print cake icing
+    println("@@@@@@@@@@@")//print cake top 
+    println("{~@~@~@~@~}")//print cake mid
+    println("@@@@@@@@@@@")//print cake bottom
+    println("")//print cake
+    print("${name} is already ${age*days} days old\n")
+	}
+    
+fun printBorder(border:String,timesTorepeat:Int)
+	{
+        repeat(timesTorepeat){
+            print(border)
+            
+        }
+        println()
+    }
